@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fira+Code&family=Poppins&family=Source+Code+Pro&family=Work+Sans&display=swap');
+
+:root {
+	--standard-bg: #44475a8e;
+
+	/* DRACULA COLORS */
+	--dracula-background: #282a36;
+	--dracula-foreground: #44475a;
+	--dracula-text: #f8f8f2;
+	--dracula-slate: #6272a4;
+	--dracula-cyan: #8be9fd;
+	--dracula-green: #50fa7b;
+	--dracula-orange: #ffb86c;
+	--dracula-pink: #ff79c6;
+	--dracula-purple: #bd93f9;
+	--dracula-red: #ff5555;
+	--dracula-yellow: #f1fa8c;
+
+	/* INFO WIDGET COLORS */
+	--info-widgets: var(--dracula-purple);
+	--resource-bar-bg: var(--standard-bg);
+	--resource-bar-fg: var(--dracula-green);
+
+	--widget-border: var(--dracula-foreground);
+
+	/* SERVICES COLORS */
+	--service-group: var(--dracula-purple);
+
+	--service-name: var(--dracula-text);
+	--service-description: var(--dracula-purple);
+
+	/* BOOKMARKS COLORS */
+	--bookmark-group: var(--dracula-purple);
+
+	--bookmark-icon-bg: #44475a60;
+	--bookmark-icon: var(--dracula-purple);
+	--bookmark-name: var(--dracula-text);
+
+	/* ALL CARD COLORS */
+	--card-color: #44475a46;
+	--card-color-hover: #44475a91;
+
+	/* FOOTER COLORS */
+	--footer-items: var(--dracula-pink);
+
+	/* FOOTER COLORS */
+	--scrollbar-fg: var(--dracula-purple);
+	--scrollbar-bg: var(--standard-bg);
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	zoom: 1.15;
+}
+
+/*******************************
+*  INFORMATION WIDGETS STYLES  *
+*******************************/
+#information-widgets {
+	border-color: var(--widget-border);
+}
+
+#information-widgets * {
+	color: var(--info-widgets) !important;
+}
+
+.resource-usage {
+	background-color: var(--resource-bar-bg) !important;
+}
+
+.resource-usage > div {
+	background-color: var(--resource-bar-fg) !important;
+}
+
+/*******************************
+*       SERVICES STYLES        *
+*******************************/
+.service-group-icon > div {
+	background: var(--service-group) !important; /* group label ICON color */
+}
+
+.service-group-name {
+	color: var(--service-group) !important; /* group label NAME color */
+}
+
+.services-group > button > svg {
+	color: var(
+		--service-group
+	) !important; /* group label EXPAND/COLLAPSE ICON color */
+}
+
+.service-card {
+	background-color: var(--card-color) !important;
+}
+
+.service-card:hover {
+	background-color: var(--card-color-hover) !important;
+}
+
+.service-name.text-sm {
+	font-size: 0.95rem;
+	color: var(--service-name);
+}
+
+.service-description.text-xs {
+	font-size: 0.75rem;
+	color: var(--service-description);
+}
+
+.service img {
+	border-radius: 25%;
+}
+
+/*******************************
+*       BOOKMARK STYLES        *
+*******************************/
+
+.bookmark-group-name {
+	color: var(--bookmark-group) !important;
+}
+
+.bookmark-icon {
+	background-color: var(--bookmark-icon-bg) !important;
+}
+
+.bookmark-icon > div > div {
+	background: var(--bookmark-icon) !important;
+}
+
+.bookmark-name.text-xs {
+	font-size: 0.85rem;
+	color: var(--bookmark-name);
+}
+
+li.bookmark > a {
+	background-color: var(--card-color) !important;
+}
+
+li.bookmark > a:hover {
+	background-color: var(--card-color-hover) !important;
+}
+
+/*******************************
+*        FOOTER STYLES         *
+*******************************/
+
+#footer svg {
+	color: var(--footer-items) !important;
+}
+
+/*******************************
+*      SCROLLBAR STYLES        *
+*******************************/
+* {
+	--scrollbar-thumb: var(--scrollbar-fg);
+	--scrollbar-track: var(--scrollbar-bg);
+}
