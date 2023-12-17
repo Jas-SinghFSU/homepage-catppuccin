@@ -18,3 +18,14 @@ services:
 ```
 
 Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme.
+
+To change icons for your services/bookmarks, first put them in your `/path/to/images/directory`, restart the container and then refer to them as follows...
+
+```yaml
+- Portainer:
+        href: https://portainer.yourdomain.com
+        description: Streamlined container management software
+        icon: /images/portainer.svg
+        server: my-docker #if integrating with docker
+        container: portainer #if integrating with docker
+```
