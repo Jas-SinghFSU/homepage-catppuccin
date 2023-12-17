@@ -1,0 +1,35 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+#pick one of the weather providers
+providers:
+  openweathermap: your_open_weather_api
+  weatherapi: your_weather_api
+color: gray
+background:
+  image: https://i.imgur.com/5DJSIvq.png
+  blur: sm
+  #opacity: 65
+title: Homepage
+favicon: your_favicon_here
+iconStyle: theme
+headerStyle: underlined
+hideVersion: true
+target: _self
+showStats: false
+statusStyle: "dot"
+
+layout:
+  Management:
+    style: row
+    columns: 3
+    icon: mdi-server
+  File Sharing:
+    style: row
+    columns: 3
+    icon: mdi-folder-multiple-image
+  Apps:
+    style: row
+    columns: 3
+    icon: mdi-apps
