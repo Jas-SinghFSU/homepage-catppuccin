@@ -1,6 +1,8 @@
 # homepage-dracula
 Dracula theme and icons for Homepage dashboard. (Work In Progress)
 
+Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
+
 Docker Compose example for the Homepage app
 ```yaml
 version: "3"
