@@ -1,5 +1,5 @@
-# Dracula for [Homepage](https://github.com/gethomepage/homepage)
-  > A dark theme for [Homepage](https://github.com/gethomepage/homepage).
+# Dracula for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](Dracula%20Icons)
+  > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Dracula styled icons.
 
 <p align="center">
   <img src="homepage-dracula.png?v=2" />
