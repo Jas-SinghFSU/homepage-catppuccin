@@ -1,6 +1,10 @@
 # Dracula for [Homepage](https://github.com/gethomepage/homepage)
   > A dark theme for [Homepage](https://github.com/gethomepage/homepage).
 
+<p align="center">
+  <img src="homepage-dracula.png?v=2" />
+</p>
+
 Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
 
 # Install
