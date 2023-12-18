@@ -1,8 +1,9 @@
-# homepage-dracula
-Dracula theme and icons for Homepage dashboard. (Work In Progress)
+# Dracula for [Homepage](https://github.com/gethomepage/homepage)
+  > A dark theme for [Homepage](https://github.com/gethomepage/homepage).
 
 Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
 
+# Install
 Docker Compose example for the Homepage app
 ```yaml
 version: "3"
@@ -31,3 +32,13 @@ To change icons for your services/bookmarks, first put them in your `/path/to/im
         server: my-docker #if integrating with docker
         container: portainer #if integrating with docker
 ```
+https://avatars.githubusercontent.com/u/21210205?v=4
+# Team
+
+| [![Jas Singh](https://github.com/Jas-SinghFSU.png?size=100)](https://github.com/Jas-SinghFSU) |
+| ---------------------------------------------------------------------------------------- |
+| [Jas Singh](https://github.com/Jas-SinghFSU)                                               |
+
+## License
+
+[MIT License](./LICENSE)
