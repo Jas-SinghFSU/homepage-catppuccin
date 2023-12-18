@@ -4,7 +4,7 @@
 Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
 
 # Install
-Docker Compose example for the Homepage app
+`docker-compose.yaml` example for the Homepage app
 ```yaml
 version: "3"
 
@@ -22,7 +22,7 @@ services:
 
 Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme.
 
-To change icons for your services/bookmarks, first put them in your `/path/to/images/directory`, restart the container and then refer to them as follows...
+To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example, restart the container and then refer to them as follows...
 
 ```yaml
 - Portainer:
