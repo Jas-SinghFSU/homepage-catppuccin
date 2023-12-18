@@ -28,6 +28,8 @@ Be sure to modify the `custom.css` file in your `/path/to/config/directory` to a
 
 To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example, restart the container and then refer to them as follows...
 
+All icons can be previewed [here](icons-preview.md).
+
 ```yaml
 - Portainer:
         href: https://portainer.yourdomain.com
