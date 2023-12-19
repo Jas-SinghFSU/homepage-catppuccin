@@ -1,23 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fira+Code&family=Poppins&family=Source+Code+Pro&family=Work+Sans&display=swap');
 
+color-test- {
+	color: rgb(17 24 39);
+}
+
 .theme-gray {
 	font-family: 'DM Sans', sans-serif;
-
-	/* Theme preset colors */
-	--color-50: 249 250 251;
-	--color-100: 243 244 246;
-	--color-200: 229 231 235;
-	--color-300: 209 213 219;
-	--color-400: 156 163 175;
-	--color-500: 107 114 128;
-	--color-600: 75 85 99;
-	--color-700: 55 65 81;
-	--color-800: 31 41 55;
-	--color-900: 21 22 29; /* Dracula specific */
-	--color-logo-start: 156 163 175;
-	--color-logo-stop: 55 65 81;
-
-	--standard-bg: #44475a8e;
+	zoom: 1.15;
 
 	/* DRACULA COLORS */
 	--dracula-background: #282a36;
@@ -32,6 +21,22 @@
 	--dracula-purple: #bd93f9;
 	--dracula-red: #ff5555;
 	--dracula-yellow: #f1fa8c;
+
+	/* Theme preset colors */
+	--color-50: 249 250 251;
+	--color-100: 243 244 246;
+	--color-200: 248 248 242; /* Text Color - USE DRACULA RGB VALUES */
+	--color-300: 209 213 219;
+	--color-400: 156 163 175;
+	--color-500: 107 114 128;
+	--color-600: 75 85 99;
+	--color-700: 55 65 81;
+	--color-800: 31 41 55;
+	--color-900: 21 22 29; /* Dracula specific */
+	--color-logo-start: 156 163 175;
+	--color-logo-stop: 55 65 81;
+
+	--standard-bg: #44475a8e;
 
 	/* INFO WIDGET COLORS */
 	--info-widgets: var(--dracula-purple);
@@ -72,51 +77,6 @@
 		background-color: rgb(var(--color-900) / 0.3) !important;
 	}
 
-	.text-red-500 {
-		color: var(--dracula-red);
-	}
-
-	.text-emerald-500\/80 {
-		color: var(--dracula-green);
-		opacity: 0.8;
-	}
-
-	.bg-emerald-500 {
-		background: var(--dracula-green);
-	}
-
-	.bg-green-500 {
-		background-color: var(--dracula-green);
-	}
-
-	.bg-amber-500 {
-		background-color: var(--dracula-orange);
-	}
-
-	.bg-cyan-500 {
-		background-color: var(--dracula-cyan);
-	}
-
-	.bg-pink-500 {
-		background-color: var(--dracula-pink);
-	}
-
-	.bg-gray-500 {
-		color: #64687e;
-	}
-
-	.bg-orange-500 {
-		background-color: var(--dracula-orange);
-	}
-
-	.bg-purple-500 {
-		background-color: var(--dracula-purple);
-	}
-
-	.bg-red-500 {
-		background-color: var(--dracula-red);
-	}
-
 	/*******************************
   *  INFORMATION WIDGETS STYLES  *
   *******************************/
@@ -125,7 +85,7 @@
 	}
 
 	#information-widgets * {
-		color: var(--info-widgets) !important;
+		color: var(--info-widgets);
 	}
 
 	#information-widgets .information-widget-logo {
@@ -135,11 +95,11 @@
 	}
 
 	.resource-usage {
-		background-color: var(--resource-bar-bg) !important;
+		background-color: var(--resource-bar-bg);
 	}
 
 	.resource-usage > div {
-		background-color: var(--resource-bar-fg) !important;
+		background-color: var(--resource-bar-fg);
 	}
 
 	/*******************************
@@ -150,21 +110,19 @@
 	}
 
 	.service-group-name {
-		color: var(--service-group) !important; /* group label NAME color */
+		color: var(--service-group); /* group label NAME color */
 	}
 
 	.services-group > button > svg {
-		color: var(
-			--service-group
-		) !important; /* group label EXPAND/COLLAPSE ICON color */
+		color: var(--service-group); /* group label EXPAND/COLLAPSE ICON color */
 	}
 
 	.service-card {
-		background-color: var(--card-color) !important;
+		background-color: var(--card-color);
 	}
 
 	.service-card:hover {
-		background-color: var(--card-color-hover) !important;
+		background-color: var(--card-color-hover);
 	}
 
 	.service-name.text-sm {
@@ -182,15 +140,15 @@
 	}
 
 	.service-block {
-		background: var(--service-block-bg) !important;
+		background: var(--service-block-bg);
 	}
 
 	.service-block .uppercase {
-		color: var(--service-block-text) !important;
+		color: var(--service-block-text);
 	}
 
 	.service-block .font-thin {
-		color: var(--dracula-text) !important;
+		color: var(--dracula-text);
 	}
 
 	/*******************************
@@ -198,15 +156,17 @@
   *******************************/
 
 	.bookmark-group-name {
-		color: var(--bookmark-group) !important;
+		color: var(--bookmark-group);
 	}
 
 	.bookmark-icon {
-		background-color: var(--bookmark-icon-bg) !important;
+		background-color: var(--bookmark-icon-bg);
 	}
 
 	.bookmark-icon > div > div {
-		background: var(--bookmark-icon) !important;
+		background: var(
+			--bookmark-icon
+		) !important; /* If using si or md icons, make default purple */
 	}
 
 	.bookmark-name.text-xs {
@@ -215,11 +175,19 @@
 	}
 
 	li.bookmark > a {
-		background-color: var(--card-color) !important;
+		background-color: var(--card-color);
 	}
 
 	li.bookmark > a:hover {
-		background-color: var(--card-color-hover) !important;
+		background-color: var(--card-color-hover);
+	}
+
+	/*******************************
+  *       CALENDAR STYLES        *
+  *******************************/
+
+	#dracula-calendar .flex.justify-between.flex-wrap span {
+		color: var(--dracula-purple);
 	}
 
 	/*******************************
@@ -227,7 +195,7 @@
   *******************************/
 
 	#footer svg {
-		color: var(--footer-items) !important;
+		color: var(--footer-items);
 	}
 
 	/*******************************
@@ -236,5 +204,188 @@
 	* {
 		--scrollbar-thumb: var(--scrollbar-fg);
 		--scrollbar-track: var(--scrollbar-bg);
+	}
+
+	/*******************************
+  *      HOMEPAGE PRESETS        *
+  *******************************/
+	.bg-amber-500 {
+		background-color: var(--dracula-orange);
+	}
+
+	.bg-black {
+		background-color: rgb(0 0 0);
+	}
+
+	.bg-blue-500 {
+		background-color: var(--dracula-cyan);
+	}
+
+	.bg-cyan-500 {
+		background-color: var(--dracula-cyan);
+	}
+
+	.bg-emerald-500 {
+		background-color: var(--dracula-green);
+	}
+
+	.bg-fuchsia-500 {
+		background-color: var(--dracula-pink);
+	}
+
+	.bg-gray-500 {
+		background-color: var(--dracula-foreground);
+	}
+
+	.bg-green-500 {
+		background-color: var(--dracula-green);
+	}
+
+	.bg-indigo-500 {
+		background-color: var(--dracula-purple);
+	}
+
+	.bg-lime-500 {
+		background-color: var(--dracula-green);
+	}
+
+	.bg-neutral-500 {
+		background-color: rgb(115 115 115);
+	}
+
+	.bg-orange-400 {
+		background-color: var(--dracula-orange);
+	}
+
+	.bg-orange-500 {
+		background-color: var(--dracula-orange);
+	}
+
+	.bg-pink-500 {
+		background-color: var(--dracula-pink);
+	}
+
+	.bg-purple-500 {
+		background-color: var(--dracula-purple);
+	}
+
+	.bg-red-500 {
+		background-color: var(--dracula-red);
+	}
+
+	.bg-rose-100 {
+		background-color: rgb(255, 205, 205);
+	}
+
+	.bg-rose-500 {
+		background-color: var(--dracula-red);
+	}
+
+	.bg-rose-900\/80 {
+		background-color: var(--dracula-red);
+	}
+
+	.bg-sky-500 {
+		background-color: var(--dracula-cyan);
+	}
+
+	.bg-slate-500 {
+		background-color: var(--dracula-slate);
+	}
+
+	.bg-stone-500 {
+		background-color: rgb(120 113 108);
+	}
+
+	.bg-teal-500 {
+		background-color: rgb(20 184 166);
+	}
+
+	.bg-violet-500 {
+		background-color: var(--dracula-purple);
+	}
+
+	.bg-white {
+		background-color: var(--dracula-text);
+	}
+
+	.bg-white\/50 {
+		background-color: hsla(0, 0%, 100%, 0.5);
+	}
+
+	.bg-yellow-500 {
+		background-color: var(--dracula-yellow);
+	}
+
+	.bg-zinc-500 {
+		background-color: rgb(113 113 122);
+	}
+
+	.text-amber-800 {
+		color: var(--dracula-orange);
+	}
+
+	.text-black {
+		color: rgb(0 0 0);
+	}
+
+	.text-black\/20 {
+		color: rgba(0, 0, 0, 0.2);
+	}
+
+	.text-blue-500\/80 {
+		color: rgba(139, 233, 253, 0.8);
+	}
+
+	.text-emerald-300 {
+		color: var(--dracula-green);
+	}
+
+	.text-emerald-500\/80 {
+		color: rgba(80, 250, 123, 0.8);
+	}
+
+	.text-gray-500 {
+		color: rgb(107 114 128);
+	}
+
+	.text-green-500 {
+		color: var(--dracula-green);
+	}
+
+	.text-orange-400\/50 {
+		color: rgba(255, 184, 108, 0.5);
+	}
+
+	.text-red-400 {
+		color: var(--dracula-red);
+	}
+
+	.text-red-500 {
+		color: var(--dracula-red);
+	}
+
+	.text-red-500\/40 {
+		color: rgba(255, 85, 85, 0.4);
+	}
+
+	.text-rose-300 {
+		color: var(--dracula-red);
+	}
+
+	.text-rose-500 {
+		color: var(--dracula-red);
+	}
+
+	.text-rose-500\/80 {
+		color: rgba(255, 85, 85, 0.8);
+	}
+
+	.text-rose-900 {
+		color: var(--dracula-red);
+	}
+
+	.text-white {
+		color: var(--dracula-text);
 	}
 }
