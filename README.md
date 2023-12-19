@@ -42,7 +42,7 @@ All icons can be previewed [here](icons-preview.md).
         server: my-docker #if integrating with docker
         container: portainer #if integrating with docker
 ```
-https://avatars.githubusercontent.com/u/21210205?v=4
+
 # Team
 
 | [![Jas Singh](https://github.com/Jas-SinghFSU.png?size=100)](https://github.com/Jas-SinghFSU) |
