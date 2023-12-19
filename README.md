@@ -24,6 +24,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
 ```
 ## Instructions
+
+### Basic
 1. First, select the `gray` theme to be your default. To do so, put this anywhere in your `settings.yaml`:
     ```yaml
     color: gray
@@ -32,6 +34,26 @@ services:
 
 3. To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example. If you add any more images/icons, you will have to restart the container every time for the changes to take effect.
 
+### Advanced
+To style the following widgets, please assign them the given id. For example, to style the `calendar` widget, assign the calendar widget an ID in your `services.yaml` as shown:
+```yaml
+- Calendar-Group:
+    - Calendar:
+        id: dracula-calendar
+        widget:
+          type: calendar
+          firstDayInWeek: sunday # optional - defaults to monday
+          view: monthly # optional - possible values monthly, agenda
+          maxEvents: 10 # optional - defaults to 10
+          showTime: true # optional - show time for event happening today - defaults to false
+```
+#### Widget IDs for Dracula theme
+
+| Widget   | id               |
+| -------- | -------          |
+| Calendar | dracula-calendar |
+
+### Icons
 All icons can be previewed [here](icons-preview.md).
 
 ```yaml
