@@ -20,13 +20,13 @@
 	/* Theme preset colors */
 	--color-50: 249 250 251;
 	--color-100: 243 244 246;
-	--color-200: 248 248 242; /* Text Color - USE DRACULA RGB VALUES */
+	--color-200: 248 248 242; /* Text Color - use Dracula text color */
 	--color-300: 209 213 219;
 	--color-400: 156 163 175;
 	--color-500: 107 114 128;
 	--color-600: 75 85 99;
 	--color-700: 55 65 81;
-	--color-800: 31 41 55;
+	--color-800: 40 42 54; /* Background color - use Dracula theme color */
 	--color-900: 21 22 29; /* Dracula specific */
 	--color-logo-start: 156 163 175;
 	--color-logo-stop: 55 65 81;
