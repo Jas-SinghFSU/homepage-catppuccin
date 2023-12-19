@@ -29,6 +29,9 @@
 	--service-name: var(--dracula-text);
 	--service-description: var(--dracula-purple);
 
+	--service-block-bg: #232530;
+	--service-block-text: var(--dracula-pink);
+
 	/* BOOKMARKS COLORS */
 	--bookmark-group: var(--dracula-purple);
 
@@ -52,6 +55,48 @@ body {
 	font-family: 'DM Sans', sans-serif;
 }
 
+/* Class color values */
+
+.text-red-500 {
+	color: var(--dracula-red);
+}
+
+.bg-emerald-500 {
+	background: var(--dracula-green);
+}
+
+.bg-green-500 {
+	background-color: var(--dracula-green);
+}
+
+.bg-amber-500 {
+	background-color: var(--dracula-orange);
+}
+
+.bg-cyan-500 {
+	background-color: var(--dracula-cyan);
+}
+
+.bg-pink-500 {
+	background-color: var(--dracula-pink);
+}
+
+.bg-gray-500 {
+	color: #64687e;
+}
+
+.bg-orange-500 {
+	background-color: var(--dracula-orange);
+}
+
+.bg-purple-500 {
+	background-color: var(--dracula-purple);
+}
+
+.bg-red-500 {
+	background-color: var(--dracula-red);
+}
+
 /*******************************
 *  INFORMATION WIDGETS STYLES  *
 *******************************/
@@ -61,6 +106,12 @@ body {
 
 #information-widgets * {
 	color: var(--info-widgets) !important;
+}
+
+#information-widgets .information-widget-logo {
+	height: 40px;
+	width: 40px;
+	margin-left: 10px;
 }
 
 .resource-usage {
@@ -108,6 +159,18 @@ body {
 
 .service img {
 	border-radius: 25%;
+}
+
+.service-block {
+	background: var(--service-block-bg) !important;
+}
+
+.service-block .uppercase {
+	color: var(--service-block-text) !important;
+}
+
+.service-block .font-thin {
+	color: var(--dracula-text) !important;
 }
 
 /*******************************
