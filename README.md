@@ -65,6 +65,10 @@ All icons can be previewed [here](icons-preview.md).
         container: portainer #if integrating with docker
 ```
 
+### Wallpapers
+
+Additional wallpapers made by [aynp](https://github.com/aynp) can be found [here](https://github.com/aynp/dracula-wallpapers).
+
 # Team
 
 | [![Jas Singh](https://github.com/Jas-SinghFSU.png?size=100)](https://github.com/Jas-SinghFSU) |
