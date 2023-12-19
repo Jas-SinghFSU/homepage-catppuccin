@@ -24,9 +24,13 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
 ```
 
-Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme.
+First, select the gray theme to be your default. To do so, put this anywhere in your `settings.yaml`:
+```yaml
+color: gray
+```
+Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme. If that file is empty and/or doesn't exist, create a new one called `custom.css` and paste the contents of [custom.css](custom.css) into it.
 
-To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example, restart the container and then refer to them as follows...
+To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example. If you add any more images/icons, you will have to restart the container every time for the changes to take effect.
 
 All icons can be previewed [here](icons-preview.md).
 

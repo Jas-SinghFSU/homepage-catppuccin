@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fira+Code&family=Poppins&family=Source+Code+Pro&family=Work+Sans&display=swap');
 
-:root {
+.theme-gray {
+	font-family: 'DM Sans', sans-serif;
+
+	/* Theme preset colors */
+	--color-50: 249 250 251;
+	--color-100: 243 244 246;
+	--color-200: 229 231 235;
+	--color-300: 209 213 219;
+	--color-400: 156 163 175;
+	--color-500: 107 114 128;
+	--color-600: 75 85 99;
+	--color-700: 55 65 81;
+	--color-800: 31 41 55;
+	--color-900: 21 22 29; /* Dracula specific */
+	--color-logo-start: 156 163 175;
+	--color-logo-stop: 55 65 81;
+
 	--standard-bg: #44475a8e;
 
 	/* DRACULA COLORS */
 	--dracula-background: #282a36;
+	--dracula-background-dark: #15161d;
 	--dracula-foreground: #44475a;
 	--dracula-text: #f8f8f2;
 	--dracula-slate: #6272a4;
@@ -49,171 +66,175 @@
 	/* FOOTER COLORS */
 	--scrollbar-fg: var(--dracula-purple);
 	--scrollbar-bg: var(--standard-bg);
-}
 
-body {
-	font-family: 'DM Sans', sans-serif;
-}
+	/*Class color values */
+	.service-tags .dark\:bg-theme-900\/50 {
+		background-color: rgb(var(--color-900) / 0.3) !important;
+	}
 
-/* Class color values */
+	.text-red-500 {
+		color: var(--dracula-red);
+	}
 
-.text-red-500 {
-	color: var(--dracula-red);
-}
+	.text-emerald-500\/80 {
+		color: var(--dracula-green);
+		opacity: 0.8;
+	}
 
-.bg-emerald-500 {
-	background: var(--dracula-green);
-}
+	.bg-emerald-500 {
+		background: var(--dracula-green);
+	}
 
-.bg-green-500 {
-	background-color: var(--dracula-green);
-}
+	.bg-green-500 {
+		background-color: var(--dracula-green);
+	}
 
-.bg-amber-500 {
-	background-color: var(--dracula-orange);
-}
+	.bg-amber-500 {
+		background-color: var(--dracula-orange);
+	}
 
-.bg-cyan-500 {
-	background-color: var(--dracula-cyan);
-}
+	.bg-cyan-500 {
+		background-color: var(--dracula-cyan);
+	}
 
-.bg-pink-500 {
-	background-color: var(--dracula-pink);
-}
+	.bg-pink-500 {
+		background-color: var(--dracula-pink);
+	}
 
-.bg-gray-500 {
-	color: #64687e;
-}
+	.bg-gray-500 {
+		color: #64687e;
+	}
 
-.bg-orange-500 {
-	background-color: var(--dracula-orange);
-}
+	.bg-orange-500 {
+		background-color: var(--dracula-orange);
+	}
 
-.bg-purple-500 {
-	background-color: var(--dracula-purple);
-}
+	.bg-purple-500 {
+		background-color: var(--dracula-purple);
+	}
 
-.bg-red-500 {
-	background-color: var(--dracula-red);
-}
+	.bg-red-500 {
+		background-color: var(--dracula-red);
+	}
 
-/*******************************
-*  INFORMATION WIDGETS STYLES  *
-*******************************/
-#information-widgets {
-	border-color: var(--widget-border);
-}
+	/*******************************
+  *  INFORMATION WIDGETS STYLES  *
+  *******************************/
+	#information-widgets {
+		border-color: var(--widget-border);
+	}
 
-#information-widgets * {
-	color: var(--info-widgets) !important;
-}
+	#information-widgets * {
+		color: var(--info-widgets) !important;
+	}
 
-#information-widgets .information-widget-logo {
-	height: 40px;
-	width: 40px;
-	margin-left: 10px;
-}
+	#information-widgets .information-widget-logo {
+		height: 40px;
+		width: 40px;
+		margin-left: 10px;
+	}
 
-.resource-usage {
-	background-color: var(--resource-bar-bg) !important;
-}
+	.resource-usage {
+		background-color: var(--resource-bar-bg) !important;
+	}
 
-.resource-usage > div {
-	background-color: var(--resource-bar-fg) !important;
-}
+	.resource-usage > div {
+		background-color: var(--resource-bar-fg) !important;
+	}
 
-/*******************************
-*       SERVICES STYLES        *
-*******************************/
-.service-group-icon > div {
-	background: var(--service-group) !important; /* group label ICON color */
-}
+	/*******************************
+  *       SERVICES STYLES        *
+  *******************************/
+	.service-group-icon > div {
+		background: var(--service-group) !important; /* group label ICON color */
+	}
 
-.service-group-name {
-	color: var(--service-group) !important; /* group label NAME color */
-}
+	.service-group-name {
+		color: var(--service-group) !important; /* group label NAME color */
+	}
 
-.services-group > button > svg {
-	color: var(
-		--service-group
-	) !important; /* group label EXPAND/COLLAPSE ICON color */
-}
+	.services-group > button > svg {
+		color: var(
+			--service-group
+		) !important; /* group label EXPAND/COLLAPSE ICON color */
+	}
 
-.service-card {
-	background-color: var(--card-color) !important;
-}
+	.service-card {
+		background-color: var(--card-color) !important;
+	}
 
-.service-card:hover {
-	background-color: var(--card-color-hover) !important;
-}
+	.service-card:hover {
+		background-color: var(--card-color-hover) !important;
+	}
 
-.service-name.text-sm {
-	font-size: 0.95rem;
-	color: var(--service-name);
-}
+	.service-name.text-sm {
+		font-size: 0.95rem;
+		color: var(--service-name);
+	}
 
-.service-description.text-xs {
-	font-size: 0.75rem;
-	color: var(--service-description);
-}
+	.service-description.text-xs {
+		font-size: 0.75rem;
+		color: var(--service-description);
+	}
 
-.service img {
-	border-radius: 25%;
-}
+	.service img {
+		border-radius: 25%;
+	}
 
-.service-block {
-	background: var(--service-block-bg) !important;
-}
+	.service-block {
+		background: var(--service-block-bg) !important;
+	}
 
-.service-block .uppercase {
-	color: var(--service-block-text) !important;
-}
+	.service-block .uppercase {
+		color: var(--service-block-text) !important;
+	}
 
-.service-block .font-thin {
-	color: var(--dracula-text) !important;
-}
+	.service-block .font-thin {
+		color: var(--dracula-text) !important;
+	}
 
-/*******************************
-*       BOOKMARK STYLES        *
-*******************************/
+	/*******************************
+  *       BOOKMARK STYLES        *
+  *******************************/
 
-.bookmark-group-name {
-	color: var(--bookmark-group) !important;
-}
+	.bookmark-group-name {
+		color: var(--bookmark-group) !important;
+	}
 
-.bookmark-icon {
-	background-color: var(--bookmark-icon-bg) !important;
-}
+	.bookmark-icon {
+		background-color: var(--bookmark-icon-bg) !important;
+	}
 
-.bookmark-icon > div > div {
-	background: var(--bookmark-icon) !important;
-}
+	.bookmark-icon > div > div {
+		background: var(--bookmark-icon) !important;
+	}
 
-.bookmark-name.text-xs {
-	font-size: 0.85rem;
-	color: var(--bookmark-name);
-}
+	.bookmark-name.text-xs {
+		font-size: 0.85rem;
+		color: var(--bookmark-name);
+	}
 
-li.bookmark > a {
-	background-color: var(--card-color) !important;
-}
+	li.bookmark > a {
+		background-color: var(--card-color) !important;
+	}
 
-li.bookmark > a:hover {
-	background-color: var(--card-color-hover) !important;
-}
+	li.bookmark > a:hover {
+		background-color: var(--card-color-hover) !important;
+	}
 
-/*******************************
-*        FOOTER STYLES         *
-*******************************/
+	/*******************************
+  *        FOOTER STYLES         *
+  *******************************/
 
-#footer svg {
-	color: var(--footer-items) !important;
-}
+	#footer svg {
+		color: var(--footer-items) !important;
+	}
 
-/*******************************
-*      SCROLLBAR STYLES        *
-*******************************/
-* {
-	--scrollbar-thumb: var(--scrollbar-fg);
-	--scrollbar-track: var(--scrollbar-bg);
+	/*******************************
+  *      SCROLLBAR STYLES        *
+  *******************************/
+	* {
+		--scrollbar-thumb: var(--scrollbar-fg);
+		--scrollbar-track: var(--scrollbar-bg);
+	}
 }
