@@ -24,7 +24,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
 ```
 ## Instructions
-1. First, select the ` theme to be your default. To do so, put this anywhere in your `settings.yaml`:
+1. First, select the `gray` theme to be your default. To do so, put this anywhere in your `settings.yaml`:
     ```yaml
     color: gray
     ```
