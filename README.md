@@ -1,11 +1,11 @@
 # Dracula for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](Dracula%20Icons)
   > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Dracula styled icons.
 
+Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-dracula/issues/new) if you would like certain icons faster. 
+
 <p align="center">
   <img src="homepage-dracula.png?v=2" />
 </p>
-
-Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
 
 # Install Homepage (If not installed)
 If you don't have Homepage dashboard installed, you can do so with the following `docker-compose.yaml`:
