@@ -8,7 +8,7 @@
 Additional icons are being worked on, please open a request issue if you would like certain icons faster. 
 
 # Install
-`docker-compose.yaml` example for the Homepage app
+If you don't have Homepage dashboard installed, you can do so with the following `docker-compose.yaml`:
 ```yaml
 version: "3"
 
@@ -23,14 +23,14 @@ services:
       - /path/to/images/directory:/app/public/images # This is where your images/app-icons would go
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
 ```
+## Instructions
+1. First, select the ` theme to be your default. To do so, put this anywhere in your `settings.yaml`:
+    ```yaml
+    color: gray
+    ```
+2. Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme. If that file is empty and/or doesn't exist, create a new one called `custom.css` and paste the contents of [custom.css](custom.css) into it.
 
-First, select the gray theme to be your default. To do so, put this anywhere in your `settings.yaml`:
-```yaml
-color: gray
-```
-Be sure to modify the `custom.css` file in your `/path/to/config/directory` to apply the theme. If that file is empty and/or doesn't exist, create a new one called `custom.css` and paste the contents of [custom.css](custom.css) into it.
-
-To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example. If you add any more images/icons, you will have to restart the container every time for the changes to take effect.
+3. To change icons for your services/bookmarks, first put them in your `/path/to/images/directory` and map the directory as shown in the `docker-compose.yaml` example. If you add any more images/icons, you will have to restart the container every time for the changes to take effect.
 
 All icons can be previewed [here](icons-preview.md).
 
