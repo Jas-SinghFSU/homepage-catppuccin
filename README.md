@@ -7,7 +7,9 @@ Additional icons are being worked on, please [open a request issue](https://gith
   <img src="homepage-dracula.png?v=2" />
 </p>
 
-# Install Homepage (If not installed)
+# Install
+
+## Homepage (If not installed)
 If you don't have Homepage dashboard installed, you can do so with the following `docker-compose.yaml`:
 ```yaml
 version: "3"
