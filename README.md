@@ -28,7 +28,7 @@ services:
 ## Instructions
 
 ### Basic
-1. First, select the `gray` theme to be your default. To do so, put this anywhere in your `settings.yaml`:
+1. First, select the `gray` theme to be your default. To do so, put this anywhere in your `settings.yaml` (located in your `/path/to/config/directory`):
     ```yaml
     color: gray
     ```
