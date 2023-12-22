@@ -4,7 +4,7 @@
 Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-dracula/issues/new) if you would like certain icons faster. 
 
 <p align="center">
-  <img src="homepage-dracula.png?v=2" />
+  <img src="[homepage-dracula.png?v=2](https://github.com/Jas-SinghFSU/homepage-dracula/blob/main/homepage-dracula.png?v=2)" />
 </p>
 
 # Install
