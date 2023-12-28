@@ -196,9 +196,54 @@
 	/*******************************
   *      SCROLLBAR STYLES        *
   *******************************/
+
 	* {
 		--scrollbar-thumb: var(--scrollbar-fg);
 		--scrollbar-track: var(--scrollbar-bg);
+	}
+
+	/*******************************
+  *       GLANCES STYLES         *
+  *******************************/
+
+	li[id^='glances-'] .recharts-surface > g:nth-of-type(1) path:nth-child(1) {
+		fill: var(--dracula-green);
+		fill-opacity: 0.15;
+	}
+
+	li[id^='glances-'] .recharts-surface g:nth-of-type(1) path:nth-child(2) {
+		stroke: var(--dracula-green);
+		stroke-opacity: 0.5;
+	}
+
+	li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(1) {
+		fill: var(--dracula-purple);
+		fill-opacity: 0.15;
+	}
+
+	li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(2) {
+		stroke: var(--dracula-purple);
+		stroke-opacity: 0.5;
+	}
+
+	li[id^='glances-'] .bottom-3.left-3 {
+		color: var(--dracula-pink);
+	}
+
+	li[id^='glances-'] .bottom-3.right-3 .opacity-75 {
+		color: var(--dracula-green);
+		opacity: 0.9;
+		font-size: 0.8rem;
+	}
+
+	li[id^='glances-'] .top-3.right-3 .opacity-50 {
+		color: var(--dracula-green);
+		opacity: 0.9;
+		font-size: 0.8rem;
+	}
+
+	li[id^='glances-'] .opacity-50 {
+		opacity: 0.8;
 	}
 
 	/*******************************
