@@ -231,13 +231,13 @@
 	}
 
 	li[id^='glances-'] .bottom-3.right-3 .opacity-75 {
-		color: var(--dracula-green);
+		color: var(--dracula-cyan);
 		opacity: 0.9;
 		font-size: 0.8rem;
 	}
 
 	li[id^='glances-'] .top-3.right-3 .opacity-50 {
-		color: var(--dracula-green);
+		color: var(--dracula-cyan);
 		opacity: 0.9;
 		font-size: 0.8rem;
 	}
