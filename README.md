@@ -1,4 +1,4 @@
-# Dracula for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](Dracula%20Icons)
+# Dracula for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](dracula_icons)
   > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Dracula styled icons.
 
 Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-dracula/issues/new) if you would like certain icons faster. 
