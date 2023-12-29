@@ -83,12 +83,6 @@
 		color: var(--info-widgets);
 	}
 
-	#information-widgets .information-widget-logo {
-		height: 40px;
-		width: 40px;
-		margin-left: 10px;
-	}
-
 	.resource-usage {
 		background-color: var(--resource-bar-bg);
 	}
