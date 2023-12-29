@@ -232,18 +232,40 @@
 
 	li[id^='glances-'] .bottom-3.right-3 .opacity-75 {
 		color: var(--dracula-cyan);
-		opacity: 0.9;
+		opacity: 1;
 		font-size: 0.8rem;
 	}
 
 	li[id^='glances-'] .top-3.right-3 .opacity-50 {
 		color: var(--dracula-cyan);
-		opacity: 0.9;
+		opacity: 1;
 		font-size: 0.8rem;
 	}
 
 	li[id^='glances-'] .opacity-50 {
 		opacity: 0.8;
+	}
+
+	li[id^='glances-'] .flex.items-center.text-xs .text-right {
+		color: var(--dracula-cyan);
+	}
+
+	li[id^='glances-'] .flex.items-center .opacity-25.w-14.text-right {
+		color: var(--dracula-purple);
+		opacity: 0.85;
+	}
+
+	li[id^='glances-']
+		.bottom-4.right-3.left-3.z-20
+		.w-3.h-3.mr-1\.5.opacity-50
+		> div {
+		background: var(--dracula-green) !important;
+		opacity: 1;
+	}
+
+	li[id^='glances-'] .bottom-4.right-3.left-3.z-20 .opacity-75.grow {
+		color: var(--dracula-pink) !important;
+		opacity: 0.75;
 	}
 
 	/*******************************
