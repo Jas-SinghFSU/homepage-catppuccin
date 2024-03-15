@@ -149,7 +149,7 @@
 	}
 
 	.bookmark-icon {
-		background-color: var(--bookmark-icon-bg);
+		background-color: var(--bookmark-icon-bg) !important;
 	}
 
 	.bookmark-icon > div > div {
