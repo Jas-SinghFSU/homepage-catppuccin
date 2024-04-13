@@ -1,9 +1,9 @@
-# Dracula for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](dracula_icons)
-  > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Dracula styled icons.
+# Catppuccin for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](catppuccin_icons)
+  > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Catppuccin styled icons.
 
-Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-dracula/issues/new) if you would like certain icons faster. 
+Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-catppuccin/issues/new) if you would like certain icons faster. 
 
-![homepage-dracula](homepage-dracula.png)
+![homepage-catppuccin](homepage-catppuccin.png)
 
 # Install
 
@@ -39,7 +39,7 @@ To style the following widgets, please assign them the given id. For example, to
 ```yaml
 - Calendar-Group:
     - Calendar:
-        id: dracula-calendar
+        id: catppuccin-calendar
         widget:
           type: calendar
           firstDayInWeek: sunday # optional - defaults to monday
@@ -47,11 +47,11 @@ To style the following widgets, please assign them the given id. For example, to
           maxEvents: 10 # optional - defaults to 10
           showTime: true # optional - show time for event happening today - defaults to false
 ```
-#### Widget IDs for Dracula theme
+#### Widget IDs for Catppuccin theme
 
 | Widget   | id                       | example                       |
 | -------- | -------                  | -------                       |
-| Calendar | dracula-calendar         | id: dracula-calendar          |
+| Calendar | catppuccin-calendar         | id: catppuccin-calendar          |
 | Glances  | glances-your_glance_name | id: glances-cpu               |
 
 ### Icons
@@ -68,7 +68,7 @@ All icons can be previewed [here](icons-preview.md).
 
 ### Wallpapers
 
-Additional wallpapers made by [aynp](https://github.com/aynp) can be found [here](https://github.com/aynp/dracula-wallpapers).
+Additional wallpapers made by [aynp](https://github.com/aynp) can be found [here](https://github.com/aynp/catppuccin-wallpapers).
 
 # Team
 

@@ -1,447 +1,449 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fira+Code&family=Poppins&family=Source+Code+Pro&family=Work+Sans&display=swap');
 
 .theme-gray {
-	font-family: 'DM Sans', sans-serif;
+        font-family: 'DM Sans', sans-serif;
+        zoom: 1.15;
 
-	/* DRACULA COLORS */
-	--dracula-background: #282a36;
-	--dracula-background-dark: #15161d;
-	--dracula-foreground: #44475a;
-	--dracula-text: #f8f8f2;
-	--dracula-slate: #6272a4;
-	--dracula-cyan: #8be9fd;
-	--dracula-green: #50fa7ae8;
-	--dracula-orange: #ffb86c;
-	--dracula-pink: #ff79c6;
-	--dracula-purple: #bd93f9;
-	--dracula-red: #ff5555;
-	--dracula-yellow: #f1fa8c;
+        /* CATPPUCCIN COLORS */
+        --catppuccin-background: #181825;
+        --catppuccin-background-dark: #11111b;
+        --catppuccin-foreground: #1e1e2e;
+        --catppuccin-text: #cdd6f4;
+        --catppuccin-surface: #6272a4;
+        --catppuccin-cyan: #89dceb;
+        --catppuccin-green: #a6e3a1;
+        --catppuccin-orange: #fab387;
+        --catppuccin-pink: #f5c2e7;
+        --catppuccin-purple: #cba6f7;
+        --catppuccin-red: #f38ba8;
+        --catppuccin-maroon: #eba0ac;
+        --catppuccin-yellow: #f9e2af;
 
-	/* Theme preset colors */
-	--color-50: 249 250 251;
-	--color-100: 243 244 246;
-	--color-200: 248 248 242; /* Text Color - use Dracula text color */
-	--color-300: 209 213 219;
-	--color-400: 156 163 175;
-	--color-500: 107 114 128;
-	--color-600: 75 85 99;
-	--color-700: 55 65 81;
-	--color-800: 40 42 54; /* Background color - use Dracula theme color */
-	--color-900: 21 22 29; /* Dracula specific */
-	--color-logo-start: 156 163 175;
-	--color-logo-stop: 55 65 81;
+        /* Theme preset colors */
+        --color-50: 249 250 251 !important;
+        --color-100: 243 244 246 !important;
+        --color-200: 215 214 244 !important; /* Text Color - use Catppuccin text color */
+        --color-300: 209 213 219 !important;
+        --color-400: 156 163 175 !important;
+        --color-500: 107 114 128 !important;
+        --color-600: 75 85 99 !important;
+        --color-700: 55 65 81 !important;
+        --color-800: 30 30 46 !important; /* Background color - use Catppuccin theme color */
+        --color-900: 17 17 27 !important; /* Catppuccin specific */
+        --color-logo-start: 156 163 175 !important;
+        --color-logo-stop: 55 65 81 !important;
 
-	--standard-bg: #44475a8e;
+        --standard-bg: #44475a8e;
 
-	/* INFO WIDGET COLORS */
-	--info-widgets: var(--dracula-purple);
-	--resource-bar-bg: var(--standard-bg);
-	--resource-bar-fg: var(--dracula-green);
+        /* INFO WIDGET COLORS */
+        --info-widgets: var(--catppuccin-purple);
+        --resource-bar-bg: var(--standard-bg);
+        --resource-bar-fg: var(--catppuccin-green);
 
-	--widget-border: var(--dracula-foreground);
+        --widget-border: var(--catppuccin-foreground);
 
-	/* SERVICES COLORS */
-	--service-group: var(--dracula-purple);
+        /* SERVICES COLORS */
+        --service-group: var(--catppuccin-purple);
 
-	--service-name: var(--dracula-text);
-	--service-description: var(--dracula-purple);
+        --service-name: var(--catppuccin-text);
+        --service-description: var(--catppuccin-maroon);
 
-	--service-block-bg: #232530;
-	--service-block-text: var(--dracula-pink);
+        --service-block-bg: #1e1e2e;
+        --service-block-text: var(--catppuccin-pink);
 
-	/* BOOKMARKS COLORS */
-	--bookmark-group: var(--dracula-purple);
+        /* BOOKMARKS COLORS */
+        --bookmark-group: var(--catppuccin-purple);
 
-	--bookmark-icon-bg: #44475a60;
-	--bookmark-icon: var(--dracula-purple);
-	--bookmark-name: var(--dracula-text);
+        --bookmark-icon-bg: #11111b;
+        --bookmark-icon: var(--catppuccin-purple);
+        --bookmark-name: var(--catppuccin-text);
 
-	/* ALL CARD COLORS */
-	--card-color: #44475a46;
-	--card-color-hover: #44475a91;
+        /* ALL CARD COLORS */
+        --card-color: #181825;
+        --card-color-hover: #232336;
 
-	/* FOOTER COLORS */
-	--footer-items: var(--dracula-pink);
+        /* FOOTER COLORS */
+        --footer-items: var(--catppuccin-pink);
 
-	/* FOOTER COLORS */
-	--scrollbar-fg: var(--dracula-purple);
-	--scrollbar-bg: var(--standard-bg);
+        /* FOOTER COLORS */
+        --scrollbar-fg: var(--catppuccin-purple);
+        --scrollbar-bg: var(--standard-bg);
 
-	/*Class color values */
-	.service-tags .dark\:bg-theme-900\/50 {
-		background-color: rgb(var(--color-900) / 0.3) !important;
-	}
+        /*Class color values */
+        .service-tags .dark\:bg-theme-900\/50 {
+                background-color: rgb(var(--color-900) / 0.3) !important;
+        }
 
-	/*******************************
+        /*******************************
   *  INFORMATION WIDGETS STYLES  *
   *******************************/
-	#information-widgets {
-		border-color: var(--widget-border);
-	}
+        #information-widgets {
+                border-color: var(--widget-border);
+        }
 
-	#information-widgets * {
-		color: var(--info-widgets);
-	}
+        #information-widgets * {
+                color: var(--info-widgets);
+        }
 
-	.resource-usage {
-		background-color: var(--resource-bar-bg);
-	}
+        .resource-usage {
+                background-color: var(--resource-bar-bg);
+        }
 
-	.resource-usage > div {
-		background-color: var(--resource-bar-fg);
-	}
+        .resource-usage > div {
+                background-color: var(--resource-bar-fg);
+        }
 
-	/*******************************
+        /*******************************
   *       SERVICES STYLES        *
   *******************************/
-	.service-group-icon > div {
-		background: var(--service-group) !important; /* group label ICON color */
-	}
+        .service-group-icon > div {
+                background: var(--service-group) !important; /* group label ICON color */
+        }
 
-	.service-group-name {
-		color: var(--service-group); /* group label NAME color */
-	}
+        .service-group-name {
+                color: var(--service-group) !important; /* group label NAME color */
+        }
 
-	.services-group > button > svg {
-		color: var(--service-group); /* group label EXPAND/COLLAPSE ICON color */
-	}
+        .services-group > button > svg {
+                color: var(--service-group); /* group label EXPAND/COLLAPSE ICON color */
+        }
 
-	.service-card {
-		background-color: var(--card-color);
-	}
+        .service-card {
+                background-color: var(--card-color) !important;
+        }
 
-	.service-card:hover {
-		background-color: var(--card-color-hover);
-	}
+        .service-card:hover {
+                background-color: var(--card-color-hover) !important;
+        }
 
-	.service-name.text-sm {
-		font-size: 0.95rem;
-		color: var(--service-name);
-	}
+        .service-name.text-sm {
+                font-size: 0.95rem;
+                color: var(--service-name);
+        }
 
-	.service-description.text-xs {
-		font-size: 0.75rem;
-		color: var(--service-description);
-	}
+        .service-description.text-xs {
+                font-size: 0.75rem;
+                color: var(--service-description);
+        }
 
-	.service img {
-		border-radius: 25%;
-	}
+        .service img {
+                border-radius: 25%;
+        }
 
-	.service-block {
-		background: var(--service-block-bg);
-	}
+        .service-block {
+                background: var(--service-block-bg);
+        }
 
-	.service-block .uppercase {
-		color: var(--service-block-text);
-	}
+        .service-block .uppercase {
+                color: var(--service-block-text);
+        }
 
-	.service-block .font-thin {
-		color: var(--dracula-text);
-	}
+        .service-block .font-thin {
+                color: var(--catppuccin-text);
+        }
 
-	/*******************************
+        /*******************************
   *       BOOKMARK STYLES        *
   *******************************/
 
-	.bookmark-group-name {
-		color: var(--bookmark-group);
-	}
+        .bookmark-group-name {
+                color: var(--bookmark-group);
+        }
 
-	.bookmark-icon {
-		background-color: var(--bookmark-icon-bg) !important;
-	}
+        .bookmark-icon {
+                background-color: var(--bookmark-icon-bg) !important;
+        }
 
-	.bookmark-icon > div > div {
-		background: var(
-			--bookmark-icon
-		) !important; /* If using si or md icons, make default purple */
-	}
+        .bookmark-icon > div > div {
+                background: var(
+                        --bookmark-icon
+                ) !important; /* If using si or md icons, make default purple */
+        }
 
-	.bookmark-name.text-xs {
-		font-size: 0.85rem;
-		color: var(--bookmark-name);
-	}
+        .bookmark-name.text-xs {
+                font-size: 0.85rem;
+                color: var(--bookmark-name);
+        }
 
-	li.bookmark > a {
-		background-color: var(--card-color);
-	}
+        li.bookmark > a {
+                background-color: var(--card-color);
+        }
 
-	li.bookmark > a:hover {
-		background-color: var(--card-color-hover);
-	}
+        li.bookmark > a:hover {
+                background-color: var(--card-color-hover);
+        }
 
-	/*******************************
+        /*******************************
   *       CALENDAR STYLES        *
   *******************************/
 
-	#dracula-calendar .flex.justify-between.flex-wrap span {
-		color: var(--dracula-purple);
-	}
+        #catppuccin-calendar .flex.justify-between.flex-wrap span {
+                color: var(--catppuccin-purple);
+        }
 
-	/*******************************
+        /*******************************
   *        FOOTER STYLES         *
   *******************************/
 
-	#footer svg {
-		color: var(--footer-items);
-	}
+        #footer svg {
+                color: var(--footer-items);
+        }
 
-	/*******************************
+        /*******************************
   *      SCROLLBAR STYLES        *
   *******************************/
 
-	* {
-		--scrollbar-thumb: var(--scrollbar-fg);
-		--scrollbar-track: var(--scrollbar-bg);
-	}
+        * {
+                --scrollbar-thumb: var(--scrollbar-fg);
+                --scrollbar-track: var(--scrollbar-bg);
+        }
 
-	/*******************************
+        /*******************************
   *       GLANCES STYLES         *
   *******************************/
 
-	li[id^='glances-'] .recharts-surface > g:nth-of-type(1) path:nth-child(1) {
-		fill: var(--dracula-green);
-		fill-opacity: 0.15;
-	}
+        li[id^='glances-'] .recharts-surface > g:nth-of-type(1) path:nth-child(1) {
+                fill: var(--catppuccin-green);
+                fill-opacity: 0.15;
+        }
 
-	li[id^='glances-'] .recharts-surface g:nth-of-type(1) path:nth-child(2) {
-		stroke: var(--dracula-green);
-		stroke-opacity: 0.5;
-	}
+        li[id^='glances-'] .recharts-surface g:nth-of-type(1) path:nth-child(2) {
+                stroke: var(--catppuccin-green);
+                stroke-opacity: 0.5;
+        }
 
-	li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(1) {
-		fill: var(--dracula-purple);
-		fill-opacity: 0.15;
-	}
+        li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(1) {
+                fill: var(--catppuccin-purple);
+                fill-opacity: 0.15;
+        }
 
-	li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(2) {
-		stroke: var(--dracula-purple);
-		stroke-opacity: 0.5;
-	}
+        li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(2) {
+                stroke: var(--catppuccin-purple);
+                stroke-opacity: 0.5;
+        }
 
-	li[id^='glances-'] .bottom-3.left-3 {
-		color: var(--dracula-pink);
-	}
+        li[id^='glances-'] .bottom-3.left-3 {
+                color: var(--catppuccin-pink);
+        }
 
-	li[id^='glances-'] .bottom-3.right-3 .opacity-75 {
-		color: var(--dracula-cyan);
-		opacity: 1;
-		font-size: 0.8rem;
-	}
+        li[id^='glances-'] .bottom-3.right-3 .opacity-75 {
+                color: var(--catppuccin-cyan);
+                opacity: 1;
+                font-size: 0.8rem;
+        }
 
-	li[id^='glances-'] .top-3.right-3 .opacity-50 {
-		color: var(--dracula-cyan);
-		opacity: 1;
-		font-size: 0.8rem;
-	}
+        li[id^='glances-'] .top-3.right-3 .opacity-50 {
+                color: var(--catppuccin-cyan);
+                opacity: 1;
+                font-size: 0.8rem;
+        }
 
-	li[id^='glances-'] .opacity-50 {
-		opacity: 0.8;
-	}
+        li[id^='glances-'] .opacity-50 {
+                opacity: 0.8;
+        }
 
-	li[id^='glances-'] .flex.items-center.text-xs .text-right {
-		color: var(--dracula-cyan);
-	}
+        li[id^='glances-'] .flex.items-center.text-xs .text-right {
+                color: var(--catppuccin-cyan);
+        }
 
-	li[id^='glances-'] .flex.items-center .opacity-25.w-14.text-right {
-		color: var(--dracula-purple);
-		opacity: 0.85;
-	}
+        li[id^='glances-'] .flex.items-center .opacity-25.w-14.text-right {
+                color: var(--catppuccin-purple);
+                opacity: 0.85;
+        }
 
-	li[id^='glances-']
-		.bottom-4.right-3.left-3.z-20
-		.w-3.h-3.mr-1\.5.opacity-50
-		> div {
-		background: var(--dracula-green) !important;
-		opacity: 1;
-	}
+        li[id^='glances-']
+                .bottom-4.right-3.left-3.z-20
+                .w-3.h-3.mr-1\.5.opacity-50
+                > div {
+                background: var(--catppuccin-green) !important;
+                opacity: 1;
+        }
 
-	li[id^='glances-'] .bottom-4.right-3.left-3.z-20 .opacity-75.grow {
-		color: var(--dracula-pink) !important;
-		opacity: 0.75;
-	}
+        li[id^='glances-'] .bottom-4.right-3.left-3.z-20 .opacity-75.grow {
+                color: var(--catppuccin-pink) !important;
+                opacity: 0.75;
+        }
 
-	/*******************************
+        /*******************************
   *      HOMEPAGE PRESETS        *
   *******************************/
-	.bg-amber-500 {
-		background-color: var(--dracula-orange);
-	}
+        .bg-amber-500 {
+                background-color: var(--catppuccin-orange);
+        }
 
-	.bg-black {
-		background-color: rgb(0 0 0);
-	}
+        .bg-black {
+                background-color: rgb(0, 0, 0);
+        }
 
-	.bg-blue-500 {
-		background-color: var(--dracula-cyan);
-	}
+        .bg-blue-500 {
+                background-color: var(--catppuccin-cyan);
+        }
 
-	.bg-cyan-500 {
-		background-color: var(--dracula-cyan);
-	}
+        .bg-cyan-500 {
+                background-color: var(--catppuccin-cyan);
+        }
 
-	.bg-emerald-500 {
-		background-color: var(--dracula-green);
-	}
+        .bg-emerald-500 {
+                background-color: var(--catppuccin-green);
+        }
 
-	.bg-fuchsia-500 {
-		background-color: var(--dracula-pink);
-	}
+        .bg-fuchsia-500 {
+                background-color: var(--catppuccin-pink);
+        }
 
-	.bg-gray-500 {
-		background-color: var(--dracula-foreground);
-	}
+        .bg-gray-500 {
+                background-color: var(--catppuccin-foreground);
+        }
 
-	.bg-green-500 {
-		background-color: var(--dracula-green);
-	}
+        .bg-green-500 {
+                background-color: var(--catppuccin-green);
+        }
 
-	.bg-indigo-500 {
-		background-color: var(--dracula-purple);
-	}
+        .bg-indigo-500 {
+                background-color: var(--catppuccin-purple);
+        }
 
-	.bg-lime-500 {
-		background-color: var(--dracula-green);
-	}
+        .bg-lime-500 {
+                background-color: var(--catppuccin-green);
+        }
 
-	.bg-neutral-500 {
-		background-color: rgb(115 115 115);
-	}
+        .bg-neutral-500 {
+                background-color: rgb(115,115,115);
+        }
 
-	.bg-orange-400 {
-		background-color: var(--dracula-orange);
-	}
+        .bg-orange-400 {
+                background-color: var(--catppuccin-orange);
+        }
 
-	.bg-orange-500 {
-		background-color: var(--dracula-orange);
-	}
+        .bg-orange-500 {
+                background-color: var(--catppuccin-orange);
+        }
 
-	.bg-pink-500 {
-		background-color: var(--dracula-pink);
-	}
+        .bg-pink-500 {
+                background-color: var(--catppuccin-pink);
+        }
 
-	.bg-purple-500 {
-		background-color: var(--dracula-purple);
-	}
+        .bg-purple-500 {
+                background-color: var(--catppuccin-purple);
+        }
 
-	.bg-red-500 {
-		background-color: var(--dracula-red);
-	}
+        .bg-red-500 {
+                background-color: var(--catppuccin-red);
+        }
 
-	.bg-rose-100 {
-		background-color: rgb(255, 205, 205);
-	}
+        .bg-rose-100 {
+                background-color: rgb(255, 205, 205);
+        }
 
-	.bg-rose-500 {
-		background-color: var(--dracula-red);
-	}
+        .bg-rose-500 {
+                background-color: var(--catppuccin-red);
+        }
 
-	.bg-rose-900\/80 {
-		background-color: var(--dracula-red);
-	}
+        .bg-rose-900\/80 {
+                background-color: var(--catppuccin-red);
+        }
 
-	.bg-sky-500 {
-		background-color: var(--dracula-cyan);
-	}
+        .bg-sky-500 {
+                background-color: var(--catppuccin-cyan);
+        }
 
-	.bg-slate-500 {
-		background-color: var(--dracula-slate);
-	}
+        .bg-slate-500 {
+                background-color: var(--catppuccin-surface);
+        }
 
-	.bg-stone-500 {
-		background-color: rgb(120 113 108);
-	}
+        .bg-stone-500 {
+                background-color: rgb(120,113,108);
+        }
 
-	.bg-teal-500 {
-		background-color: rgb(20 184 166);
-	}
+        .bg-teal-500 {
+                background-color: #94e2d5;
+        }
 
-	.bg-violet-500 {
-		background-color: var(--dracula-purple);
-	}
+        .bg-violet-500 {
+                background-color: var(--catppuccin-purple);
+        }
 
-	.bg-white {
-		background-color: var(--dracula-text);
-	}
+        .bg-white {
+                background-color: var(--catppuccin-text);
+        }
 
-	.bg-white\/50 {
-		background-color: hsla(0, 0%, 100%, 0.5);
-	}
+        .bg-white\/50 {
+                background-color: hsla(0, 0%, 100%, 0.5);
+        }
 
-	.bg-yellow-500 {
-		background-color: var(--dracula-yellow);
-	}
+        .bg-yellow-500 {
+                background-color: var(--catppuccin-yellow);
+        }
 
-	.bg-zinc-500 {
-		background-color: rgb(113 113 122);
-	}
+        .bg-zinc-500 {
+                background-color: rgb(113,113,122);
+        }
 
-	.text-amber-800 {
-		color: var(--dracula-orange);
-	}
+        .text-amber-800 {
+                color: var(--catppuccin-orange);
+        }
 
-	.text-black {
-		color: rgb(0 0 0);
-	}
+        .text-black {
+                color: rgb(0,0,0);
+        }
 
-	.text-black\/20 {
-		color: rgba(0, 0, 0, 0.2);
-	}
+        .text-black\/20 {
+                color: rgba(0, 0, 0, 0.2);
+        }
 
-	.text-blue-500\/80 {
-		color: rgba(139, 233, 253, 0.8);
-	}
+        .text-blue-500\/80 {
+                color: rgba(137, 220, 235, 0.8);
+        }
 
-	.text-emerald-300 {
-		color: var(--dracula-green);
-	}
+        .text-emerald-300 {
+                color: var(--catppuccin-green);
+        }
 
-	.text-emerald-500\/80 {
-		color: rgba(80, 250, 123, 0.8);
-	}
+        .text-emerald-500\/80 {
+                color: rgba(80, 250, 123, 0.8);
+        }
 
-	.text-gray-500 {
-		color: rgb(107 114 128);
-	}
+        .text-gray-500 {
+                color: rgb(107,114,128);
+        }
 
-	.text-green-500 {
-		color: var(--dracula-green);
-	}
+        .text-green-500 {
+                color: var(--catppuccin-green);
+        }
 
-	.text-orange-400\/50 {
-		color: rgba(255, 184, 108, 0.5);
-	}
+        .text-orange-400\/50 {
+                color: rgba(250, 179, 135, 0.5);
+        }
 
-	.text-red-400 {
-		color: var(--dracula-red);
-	}
+        .text-red-400 {
+                color: var(--catppuccin-red);
+        }
 
-	.text-red-500 {
-		color: var(--dracula-red);
-	}
+        .text-red-500 {
+                color: var(--catppuccin-red);
+        }
 
-	.text-red-500\/40 {
-		color: rgba(255, 85, 85, 0.4);
-	}
+        .text-red-500\/40 {
+                color: rgba(243, 139, 168, 0.4);
+        }
 
-	.text-rose-300 {
-		color: var(--dracula-red);
-	}
+        .text-rose-300 {
+                color: var(--catppuccin-red);
+        }
 
-	.text-rose-500 {
-		color: var(--dracula-red);
-	}
+        .text-rose-500 {
+                color: var(--catppuccin-red);
+        }
 
-	.text-rose-500\/80 {
-		color: rgba(255, 85, 85, 0.8);
-	}
+        .text-rose-500\/80 {
+                color: rgba(243, 139, 168, 0.8);
+        }
 
-	.text-rose-900 {
-		color: var(--dracula-red);
-	}
+        .text-rose-900 {
+                color: var(--catppuccin-red);
+        }
 
-	.text-white {
-		color: var(--dracula-text);
-	}
+        .text-white {
+                color: var(--catppuccin-text);
+        }
 }
