@@ -11,10 +11,12 @@
         --catppuccin-text: #cdd6f4;
         --catppuccin-surface: #6272a4;
         --catppuccin-cyan: #89dceb;
+        --catppuccin-teal: #94e2d5;
         --catppuccin-green: #a6e3a1;
         --catppuccin-orange: #fab387;
         --catppuccin-pink: #f5c2e7;
         --catppuccin-purple: #cba6f7;
+        --catppuccin-lavender: #b4befe;
         --catppuccin-red: #f38ba8;
         --catppuccin-maroon: #eba0ac;
         --catppuccin-yellow: #f9e2af;
@@ -203,22 +205,22 @@
   *******************************/
 
         li[id^='glances-'] .recharts-surface > g:nth-of-type(1) path:nth-child(1) {
-                fill: var(--catppuccin-green);
-                fill-opacity: 0.15;
+                fill: var(--catppuccin-maroon);
+                fill-opacity: 0.35;
         }
 
         li[id^='glances-'] .recharts-surface g:nth-of-type(1) path:nth-child(2) {
-                stroke: var(--catppuccin-green);
+                stroke: var(--catppuccin-maroon);
                 stroke-opacity: 0.5;
         }
 
         li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(1) {
-                fill: var(--catppuccin-purple);
-                fill-opacity: 0.15;
+                fill: var(--catppuccin-lavender);
+                fill-opacity: 0.35;
         }
 
         li[id^='glances-'] .recharts-surface g:nth-of-type(2) path:nth-child(2) {
-                stroke: var(--catppuccin-purple);
+                stroke: var(--catppuccin-lavender);
                 stroke-opacity: 0.5;
         }
 
