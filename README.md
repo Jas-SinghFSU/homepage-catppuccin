@@ -3,7 +3,7 @@
 
 Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-catppuccin/issues/new) if you would like certain icons faster. 
 
-![homepage-catppuccin](homepage-catppuccin.png)
+![homepage-catppuccin](image.webp)
 
 # Install
 
