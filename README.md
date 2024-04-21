@@ -1,9 +1,9 @@
 # Catppuccin for [Homepage](https://github.com/gethomepage/homepage) w/ [Icons](catppuccin_icons)
   > A dark theme for [Homepage](https://github.com/gethomepage/homepage) with Catppuccin styled icons.
 
-Additional icons are being worked on, please [open a request issue](https://github.com/Jas-SinghFSU/homepage-catppuccin/issues/new) if you would like certain icons faster. 
+Please [open a request issue](https://github.com/Jas-SinghFSU/homepage-catppuccin/issues/new) if you would like certain icons that are not already listed. 
 
-![homepage-catppuccin](homepage-catppuccin.png)
+![homepage-catppuccin](image.webp)
 
 # Install
 
@@ -65,10 +65,6 @@ All icons can be previewed [here](icons-preview.md).
         server: my-docker #if integrating with docker
         container: portainer #if integrating with docker
 ```
-
-### Wallpapers
-
-Additional wallpapers made by [aynp](https://github.com/aynp) can be found [here](https://github.com/aynp/catppuccin-wallpapers).
 
 # Team
 

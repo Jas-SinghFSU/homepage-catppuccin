@@ -8,8 +8,8 @@ providers:
   weatherapi: your_weather_api
 color: gray
 background:
-  image: https://i.imgur.com/5DJSIvq.png
-  blur: sm
+  image: https://i.imgur.com/KrHfzGH.png
+  blur: md
   #opacity: 65
 title: Homepage
 favicon: your_favicon_here
