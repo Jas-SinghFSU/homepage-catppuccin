@@ -9,7 +9,7 @@ providers:
 color: gray
 background:
   image: https://i.imgur.com/KrHfzGH.png
-  blur: sm
+  blur: md
   #opacity: 65
 title: Homepage
 favicon: your_favicon_here
