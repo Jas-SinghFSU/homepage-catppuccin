@@ -8,7 +8,7 @@ providers:
   weatherapi: your_weather_api
 color: gray
 background:
-  image: https://i.imgur.com/5DJSIvq.png
+  image: https://i.imgur.com/KrHfzGH.png
   blur: sm
   #opacity: 65
 title: Homepage
